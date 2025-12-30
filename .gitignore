@@ -1,0 +1,116 @@
+# LifeOS Template .gitignore
+# Safety-by-default: Personal content is ignored, templates are preserved
+# Copy this to .gitignore when setting up your LifeOS
+
+# ===================
+# SYSTEM FILES
+# ===================
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# ===================
+# ENVIRONMENT & SECRETS
+# ===================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials*.json
+
+# ===================
+# EDITOR DIRECTORIES
+# ===================
+.vscode/
+.idea/
+*.sublime-*
+
+# ===================
+# TEMPORARY FILES
+# ===================
+*.tmp
+*.temp
+*.log
+
+# ===================
+# PERSONAL CONTENT (IGNORED BY DEFAULT)
+# ===================
+# These directories contain personal data and are ignored
+# Only template files are tracked
+
+# Journal entries (keep templates)
+journal/daily/*.md
+!journal/daily/_template.md
+
+# People references (keep templates)
+reference/people/*.md
+!reference/people/_template.md
+
+# Goals (keep templates)
+reference/goals/*.md
+!reference/goals/_template.md
+
+# Work projects (keep templates)
+projects/work/*.md
+!projects/work/_template.md
+
+# Personal projects (keep templates)
+projects/personal/*.md
+!projects/personal/_template.md
+
+# Metrics - habits (keep templates)
+metrics/habits/*.md
+!metrics/habits/_template.md
+
+# Metrics - health (keep templates)
+metrics/health/*.md
+!metrics/health/_template.md
+
+# Decisions (keep templates)
+decisions/*.md
+!decisions/_template.md
+
+# Travel - upcoming (keep templates)
+travel/upcoming/*.md
+!travel/upcoming/_template.md
+
+# Interests (keep templates)
+interests/*.md
+!interests/_template.md
+
+# ===================
+# FULLY IGNORED DIRECTORIES
+# ===================
+# These have no templates and are purely personal
+
+# Inbox contents
+inbox/brain-dumps/*.md
+inbox/meetings/*.md
+inbox/quick-capture/*.md
+
+# Archive
+archive/
+
+# Reviews (weekly/monthly/quarterly)
+reviews/**/*.md
+
+# Personal reference files
+reference/accounts.md
+reference/life-audit-*.md
+
+# ===================
+# CLAUDE.md HANDLING
+# ===================
+# CLAUDE.md contains personal configuration
+# CLAUDE.md.template is the generic template
+CLAUDE.md
+
+# ===================
+# MCP CREDENTIALS
+# ===================
+# Never commit OAuth credentials
+.mcp/
+~/.mcp/
